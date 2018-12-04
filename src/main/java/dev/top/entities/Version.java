@@ -13,12 +13,14 @@ public class Version {
     private Integer id;
 
     private String name;
+    private int nb;
 
     public Version() {
     }
 
-    public Version(String name) {
+    public Version(String name, int nb) {
         this.name = name;
+        this.nb = nb;
     }
 
     public Integer getId() {
@@ -36,4 +38,12 @@ public class Version {
     public void setName(String name) {
         this.name = name;
     }
+
+	public int getNb() {
+		return nb;
+	}
+
+	public void setNb(int nb) {
+		this.nb = nb;
+	}
 }
