@@ -13,18 +13,16 @@ public class Collegue {
 	private Integer id;
 	private String photo;
 	private String nom;
-	private Avis avis;
 	private int score;
 
 	public Collegue() {
 
 	}
 
-	public Collegue(String photo, String nom, Avis avis, int score) {
+	public Collegue(String photo, String nom, int score) {
 		super();
 		this.photo = photo;
 		this.nom = nom;
-		this.avis = avis;
 		this.score = score;
 	}
 
@@ -50,14 +48,6 @@ public class Collegue {
 
 	public void setNom(String nom) {
 		this.nom = nom;
-	}
-
-	public Avis getAvis() {
-		return avis;
-	}
-
-	public void setAvis(Avis avis) {
-		this.avis = avis;
 	}
 
 	public int getScore() {
