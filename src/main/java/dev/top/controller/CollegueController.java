@@ -33,13 +33,18 @@ public class CollegueController {
 	public Collegue patchCollegue(@PathVariable String nom, @RequestBody Action action) {
 		Collegue col = this.collegueRepo.findByNom(nom);
 		int a = col.getScore();
-		if (action.getAction().equals(Avis.AIMER)) {
-			a += 100;
-			col.setScore(a);
-		} else {
-			a -= 100;
-			col.setScore(a);
+		if (col.getScore() <= 1000 || col.getScore() >= -1000) {
+			return col;
+		}else {
+			if (action.getAction().equals(Avis.AIMER)) {
+				a += 100;
+				col.setScore(a);
+			} else {
+				a -= 100;
+				col.setScore(a);
+			}
 		}
+			
 //		this.collegueRepo.save(col);
 		return col;
 	}
