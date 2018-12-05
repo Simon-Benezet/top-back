@@ -45,7 +45,7 @@ public class CollegueController {
 			}
 		}
 			
-//		this.collegueRepo.save(col);
+		this.collegueRepo.save(col);
 		return col;
 	}
 }
