@@ -29,9 +29,9 @@ public class CollegueController {
 		return this.collegueRepo.findAll();
 	}
 
-	@PatchMapping("/{nom}")
-	public Collegue patchCollegue(@PathVariable String nom, @RequestBody Action action) {
-		Collegue col = this.collegueRepo.findByNom(nom);
+	@PatchMapping("/{pseudo}")
+	public Collegue patchCollegue(@PathVariable String pseudo, @RequestBody Action action) {
+		Collegue col = this.collegueRepo.findByPseudo(pseudo);
 		int a = col.getScore();
 		if (col.getScore() <= 1000 || col.getScore() >= -1000) {
 			return col;

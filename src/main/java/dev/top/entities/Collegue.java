@@ -12,17 +12,17 @@ public class Collegue {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String photo;
-	private String nom;
+	private String pseudo;
 	private int score;
 
 	public Collegue() {
 
 	}
 
-	public Collegue(String photo, String nom, int score) {
+	public Collegue(String photo, String pseudo, int score) {
 		super();
 		this.photo = photo;
-		this.nom = nom;
+		this.pseudo = pseudo;
 		this.score = score;
 	}
 
@@ -42,20 +42,20 @@ public class Collegue {
 		this.photo = photo;
 	}
 
-	public String getNom() {
-		return nom;
-	}
-
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
-
 	public int getScore() {
 		return score;
 	}
 
 	public void setScore(int score) {
 		this.score = score;
+	}
+
+	public String getPseudo() {
+		return pseudo;
+	}
+
+	public void setPseudo(String pseudo) {
+		this.pseudo = pseudo;
 	}
 
 }
