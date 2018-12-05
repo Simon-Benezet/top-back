@@ -22,10 +22,10 @@ public class StartupDataInit {
 	public void init() {
 
 		if (this.versionRepo.count() <= 0) {
-			this.versionRepo.save(new Version("v1", 1));
-			this.versionRepo.save(new Version("v2", 2));
-			this.versionRepo.save(new Version("v3", 3));
-			this.versionRepo.save(new Version("v4", 4));
+//			this.versionRepo.save(new Version("v1", 1));
+//			this.versionRepo.save(new Version("v2", 2));
+//			this.versionRepo.save(new Version("v3", 3));
+//			this.versionRepo.save(new Version("v4", 4));
 		}
 
 			this.collegueRepo.save(new Collegue(
