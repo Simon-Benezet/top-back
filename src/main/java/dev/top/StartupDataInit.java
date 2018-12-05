@@ -37,5 +37,6 @@ public class StartupDataInit {
 			this.collegueRepo.save(new Collegue(
 					"https://cdn-images-1.medium.com/max/1200/0*pAdZLfSqNrMZAAPA.jpg",
 					"Didier", 0));
+		
 	}
 }
