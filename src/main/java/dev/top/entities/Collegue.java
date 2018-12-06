@@ -35,8 +35,6 @@ public class Collegue {
 		Adresse = adresse;
 	}
 
-
-
 	public Integer getId() {
 		return id;
 	}
