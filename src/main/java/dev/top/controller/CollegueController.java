@@ -42,7 +42,6 @@ public class CollegueController {
 			a -= 100;
 			col.setScore(a);
 		}
-
 		this.collegueRepo.save(col);
 		return col;
 	}

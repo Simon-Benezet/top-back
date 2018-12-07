@@ -27,7 +27,7 @@ public class StartupDataInit {
 			this.versionRepo.save(new Version("v3", 3));
 			this.versionRepo.save(new Version("v4", 4));
 		}
-
+		
 		if (this.collegueRepo.count() <= 0) {
 			this.collegueRepo.save(new Collegue("", "Rod", 0, "Louis", "Rodrigez", "LR@gmail.com", "10 rue la bas"));
 			this.collegueRepo.save(new Collegue(
