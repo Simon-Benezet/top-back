@@ -29,14 +29,11 @@ public class StartupDataInit {
 		}
 
 		if (this.collegueRepo.count() <= 0) {
-			this.collegueRepo.save(new Collegue(
-					"",
-					"Rod", 0, "Louis", "Rodrigez", "LR@gmail.com", "10 rue la bas"));
+			this.collegueRepo.save(new Collegue("", "Rod", 0, "Louis", "Rodrigez", "LR@gmail.com", "10 rue la bas"));
 			this.collegueRepo.save(new Collegue(
 					"https://images.pexels.com/photos/265036/pexels-photo-265036.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
 					"Ali", 0, "Alice", "Alice", "AA@gmail.com", "11 rue ici"));
-			this.collegueRepo.save(new Collegue(
-					"https://cdn-images-1.medium.com/max/1200/0*pAdZLfSqNrMZAAPA.jpg",
+			this.collegueRepo.save(new Collegue("https://cdn-images-1.medium.com/max/1200/0*pAdZLfSqNrMZAAPA.jpg",
 					"Did", 0, "Jacques", "Didier", "JD@gmail.com", "12 rue je sais plus"));
 		}
 	}
